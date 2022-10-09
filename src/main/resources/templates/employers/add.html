@@ -18,6 +18,12 @@
         <input class="form-control" th:field="${employer.location}" />
         <span th:errors="${employer.location}" class="error"></span>
     </div>
+    <div>
+        <label>Employer</label>
+        <select name="employerId" id="employerId">
+            <option th:each="employer : ${employers}" th:value="${employer.id}"></option>
+        </select>
+    </div>
 
     <input type="submit" value="Add Employer" />
 </form>
