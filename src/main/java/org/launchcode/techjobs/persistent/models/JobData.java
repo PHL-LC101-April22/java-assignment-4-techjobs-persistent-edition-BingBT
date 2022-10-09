@@ -27,6 +27,7 @@ public class JobData {
 
         if (value.toLowerCase().equals("all")){
             return (ArrayList<Job>) allJobs;
+            //return (ArrayList<Job>) allJobs;
         }
 
         if (column.equals("all")){
